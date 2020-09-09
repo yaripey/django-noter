@@ -1,0 +1,8 @@
+{% if notes_list %}
+    {% for note in notes_list %}
+        <p>{{ note }}</p>
+    {% endfor %}
+    
+{% else %}
+    <p>There are no notes.</p>
+{% endif %}

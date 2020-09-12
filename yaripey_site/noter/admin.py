@@ -9,7 +9,7 @@ class NoteInline(admin.StackedInline):
 
 class NotebookAdmin(admin.ModelAdmin):
     fieldsets = [
-        (None, {'fields': ['name', 'user']}),
+        (None, {'fields': ['name', 'user', 'desc']}),
     ]
     inlines = [NoteInline]
 
